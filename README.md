@@ -1,24 +1,21 @@
 # RailsExtend
 
-TODO: Write a gem description
+Rails extend
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'rails_extend'
+    gem 'rails_extend', :git => "git://github.com/lg2046/rails_extend'
 
 And then execute:
 
-    $ bundle
+    $ bundle or bundle update
 
 Or install it yourself as:
 
     $ gem install rails_extend
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 

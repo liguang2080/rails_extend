@@ -1,5 +1,5 @@
-require "rails_extend/version"
+require File.dirname(__FILE__) + '/rails_extend/version'
 
-module RailsExtend
-  # Your code goes here...
+if Rails
+  require File.dirname(__FILE__) + '/rails_extend/railtie'
 end
