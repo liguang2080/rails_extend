@@ -1,5 +1,5 @@
 # -*- encoding : utf-8 -*-
-module ActiveRecord
+module ActiveModel
   class Errors
     def to_s
       full_messages.join("\n")
