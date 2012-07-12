@@ -1,8 +1,6 @@
 # -*- encoding : utf-8 -*-
 module ActiveRecord
-
   class Base
-
     class << self
       alias_method :[], :find
     end
@@ -14,5 +12,4 @@ module ActiveRecord
       prefix != :bare ? "#{prefix.to_s.underscore}_#{display_id}" : display_id
     end
   end
-
 end
