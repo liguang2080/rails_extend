@@ -13,5 +13,8 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "rails_extend"
   gem.require_paths = ["lib"]
+
+  gem.add_dependency "rails"
+
   gem.version       = RailsExtend::VERSION
 end
