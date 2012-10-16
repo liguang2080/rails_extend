@@ -5,9 +5,9 @@ module ActiveRecord
       alias_method :[], :find
       
       # 加载模型同目录下的文件  目前只支持一级
-      def load_dependency(dependency)
-        require Rails.root + "app/models/#{self.name.underscore}/#{dependency}"
-        include "#{self.name}#{dependency.classify}".constantize
+      def load_part(part_name)
+        require Rails.root + "app/models/#{self.name.underscore}/#{part_name}"
+        include "#{self.name}#{part_name.classify}".constantize
       end
     end
 
