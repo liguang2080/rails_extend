@@ -16,7 +16,7 @@ class File
   end
   
   def self.new_upload(upload_file)
-    tmp_path  = Rails.root.to_s + "/tmp/#{RandomCode.mix_string(6)}_#{upload_file.original_filename}"
+    tmp_path  = Rails.root.to_s + "/tmp/#{RandomCode.mix_string(16)}#{File.extname(url)}"
     File.open(tmp_path, "wb") { |f| f.write(upload_file.read) }
     
     if block_given?
