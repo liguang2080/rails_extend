@@ -10,6 +10,11 @@ module ActiveRecord
         include "#{self.name}#{part_name.classify}".constantize
       end
     end
+    
+    def to_s
+      self.inspect
+    end
+
 
     def dom_id(prefix='')
       display_id = new_record? ? "new" : id.to_s
